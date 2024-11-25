@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact me - Trustscrow bot</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="contact-body">
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="navbar-content">
+        <div class="navbrand">
+          <a href="./index" class="logo"
+            ><img src="./trustscrow-logo.jpg" width="100%" height="100%"
+          /></a>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <ul>
+            <li><a href="./index">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="./index#users">Users</a></li>
+            <li><a href="./index#about">About</a></li>
+            <li><a href="./contact">Contact Us</a></li>
+            <li><a href="./faqs">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="navicon">
+          <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
+            &#9776;
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Banner -->
+    <section id="banner">
+      <div class="banner">
+        <div class="b-info">
+          <section class="b-content">
+            <div class="b-part">
+              <h1>Contact</h1>
+            </div>
+            <div class="b-part">
+              <p>We're here to help when you need support!</p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- Information  -->
+    <section class="banner-map">
+      <div class="map-info">
+        <div id="map-message">
+          <div class="map-message">
+            <h6>Get in touch</h6>
+            <h2>Don't hesitate to contact us.</h2>
+            <hr />
+            <div class="msg">
+              <p>
+                If you have any questions or concerns, refer to
+                <a href="./faqs">Faq</a> and if that does not help contact
+                Escrow Bot using the provided information below.
+              </p>
+            </div>
+
+            <!-- Support -->
+            <div class="infor">
+              <ul>
+                <li><i>telegram-icon</i> <span>Physical location</span></li>
+                <li>
+                  <i>email-icon</i> <span>support@trustscrow-bot.com</span>
+                </li>
+                <li><i>telegram-icon</i> <span>Telegram Support</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="map-live">
+          <div class="map-live">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.6216559392437!2d3.4849314737856987!3d6.442603693548668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf5e0ecbe54d5%3A0x66ef5ab6de0a6454!2sIxora%20park%20estate!5e0!3m2!1sen!2sug!4v1730038620707!5m2!1sen!2sug"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact us -->
+    <section id="message">
+      <section class="message-overlay"></section>
+      <div class="message">
+        <div class="outer-blub">
+          <div class="blub">
+            <div class="blub-req">
+              <h4>Send us a message</h4>
+            </div>
+            <div class="blub-info">
+              <h2>
+                We’re helping to automate some of the world’s most complex and
+                difficult problems.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form -->
+    <section id="message-box">
+      <div class="outter-box">
+        <div class="inner-box">
+          <section class="form-info">
+            <div class="form-overlay"></div>
+            <div class="msg-form">
+              <div class="input-cols">
+                <div class="input-rows">
+                  <!-- Name -->
+                  <div class="input-row">
+                    <h4>Your Name <span class="input-star">*</span></h4>
+                    <div class="name-box">
+                      <div>
+                        <input />
+                        <p>First</p>
+                      </div>
+                      <div>
+                        <input />
+                        <p>Last</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Email-->
+                  <div class="input-row">
+                    <h4>Email <span class="input-star">*</span></h4>
+                    <input id="email" name="email" type="email" />
+                  </div>
+
+                  <!-- Reason for contact -->
+                  <div class="input-row">
+                    <h4>
+                      Why are you contacting escrow bot
+                      <span class="input-star">*</span>
+                    </h4>
+                    <div>
+                      <select id="dropdown" name="options">
+                        <option value="option1">Technical Issues</option>
+                        <option value="option2">Review and Feedback</option>
+                        <option value="option3">Request New Feature</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- Feedback -->
+                  <div class="input-row">
+                    <h4>
+                      Tell us more about your feedback
+                      <span class="input-star">*</span>
+                    </h4>
+                    <div class="feedback">
+                      <textarea>Hello...</textarea>
+                    </div>
+                  </div>
+                  <div class="input-row">
+                    <button class="feedback-bt">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social media -->
+    <section class="social-links">
+      <div class="social-links-list">
+        <div>
+          <a href="facebook.com"
+            ><img src="./img/facebook-sm.png" alt="facebook-logo"
+          /></a>
+        </div>
+        <div>
+          <a href="signal.com"
+            ><img src="./img/signal_logo.png" alt="signal-logo"
+          /></a>
+        </div>
+        <div>
+          <a href="web.whatsapp"
+            ><img src="./img/whatsapp-sm.png" alt="whatsapp-logo"
+          /></a>
+        </div>
+        <div>
+          <a href="web.telegram.org"
+            ><img src="./img/telegram.png" alt="telegram-logo"
+          /></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="./index" class="footer-logo">
+            <img src="./trustscrow-logo.jpg" width="100%" height="100%" />
+          </a>
+        </div>
+        <nav class="footer-nav">
+          <div>
+            <ul class="footer-links">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="./faqs">FAQs</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="footer-rights">
+          <p>All rights reserved ©Trustscrow-bot</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./escrow.js"></script>
+  </body>
+</html>
